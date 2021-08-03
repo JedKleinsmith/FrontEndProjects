@@ -1,0 +1,131 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    Font-size: 1.2vw;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+   
+   
+}
+.container{
+    height: min-content;
+    width: 65% ;
+    display: flex; 
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    min-width: 35%;
+    
+    color: white;
+    padding: 3% 5%;
+}
+#Sedan-col{
+    background-color: hsl(31, 77%, 52%) ;
+}
+#SUV-col{
+    background-color: hsl(184, 100%, 22%);
+}
+#Lux-col{
+    background-color:hsl(179, 100%, 13%);
+}
+.column:nth-child(1){
+    border-radius: 2% 0 0 2%;
+}
+.column:nth-last-child(1){
+    border-radius:  0 2% 2% 0 ;
+}
+.col-i{
+    width: 30%;
+    float: left;
+    margin: 10% 0;
+}
+
+.col-i img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.col-head{
+    font-size: 2.3vw;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw; 
+}
+
+.col-info{
+    width: 80%;
+    line-height: 1.8vw;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 5vw;
+
+}
+
+.col-button{
+    width: 65%;
+   min-height: 50px;
+    border-style: solid;
+    border-radius: 40px;
+    border-width: 3px ;
+    border-color: white;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    mix-blend-mode: screen;
+    cursor: pointer;
+    /* margin-top: 5rem; */
+}
+.col-button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 1000px) {
+  body{background-color: khaki;}
+    .container{
+        
+        flex-direction: column;
+        height: max-content;
+    }
+    .column{
+        justify-self: center;
+        height: min-content;
+        width: 60%;
+        margin-left:20% ;
+        padding-left: 10% ;
+    }
+    .bb{
+        width: 100%;
+    }
+    .col-button{
+        width: 50%;
+    
+    }
+    .col-info{
+        width: 70%;
+        font-size: 1.8vw;
+    }
+    .column:nth-child(1){
+        border-radius: 2% 2% 0 0;
+    }
+    .column:nth-last-child(1){
+        border-radius: 0 0 2% 2%  ;
+    }
+    
+}
+
